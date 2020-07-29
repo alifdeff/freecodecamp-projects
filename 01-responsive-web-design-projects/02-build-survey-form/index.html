@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FCC | Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <h1 id="title">Arema Survey Form</h1>
+        <p id="description">
+          Let's improve our football club communities better
+        </p>
+      </div>
+
+      <!-- Form -->
+      <form action="" id="survey-form">
+        <!-- Form - Name -->
+        <div class="name">
+          <label id="name-label" for="name" class="form"
+            >Silahkan isi Nama</label
+          >
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Inputkan Nama"
+          />
+        </div>
+
+        <!-- Form - Email -->
+        <div class="email">
+          <label id="email-label" for="email" class="form"
+            >Silahkan isi Email</label
+          >
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Inputkan Email"
+          />
+        </div>
+
+        <!-- Form - Umur -->
+        <div class="age">
+          <label id="number-label" for="number" class="form"
+            >Silahkan Pilih Umur</label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="1"
+            max="30"
+            placeholder="Pilih Umur"
+          />
+        </div>
+
+        <!-- Form - Posis -->
+        <div class="current-role">
+          <p>Pilih posisi kamu saat ini</p>
+          <select id="dropdown" name="role">
+            <option disabled selected value>Pilih posisi kamu</option>
+            <option value="pusat">Pengurus Pusat</option>
+            <option value="luar-negeri">Pengurus Luar Negeri</option>
+            <option value="daerah">Pengurus Daerah</option>
+            <option value="korwil">Pengurus Korwil</option>
+            <option value="korda">Pengurus Korda</option>
+          </select>
+        </div>
+
+        <!-- Form - Gender -->
+        <div class="radio-buttons">
+          <p>Pilih Gender Kamu</p>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label><br />
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label><br />
+        </div>
+
+        <!-- Form - Checkbox -->
+        <div class="check-box">
+          <p>Apa yang kamu inginkan dari Arema Community kedepannya?</p>
+          <input
+            type="checkbox"
+            id="vehicle1"
+            name="struktur"
+            value="struktur"
+          />
+          <label for="struktur"> Struktur Kepengurusan Arema</label><br />
+          <input type="checkbox" id="vehicle2" name="koreo" value="koreo" />
+          <label for="koreo"> Improvisasi Koreografi</label><br />
+          <input type="checkbox" id="vehicle3" name="diskusi" value="diskusi" />
+          <label for="diskusi"> Sering diadakan forum diskusi</label>
+        </div>
+
+        <!-- Form - Saran -->
+        <div class="text-area">
+          <p>Masukkan saran</p>
+          <textarea placeholder="Masukkan saran yang membangun"></textarea>
+        </div>
+
+        <!-- Form - Button -->
+        <div class="button">
+          <button id="submit" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
