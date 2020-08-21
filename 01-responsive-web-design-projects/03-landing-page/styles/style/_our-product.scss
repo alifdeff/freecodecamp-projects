@@ -1,0 +1,60 @@
+.our-product {
+
+    .container {
+        padding-right: 130px;
+        padding-left: 110px;
+        @include flex(row, space-between);
+
+        .product-text {
+            flex: 1;
+
+            h2 {
+                font-family: Georgia;
+                font-style: normal;
+                font-weight: bold;
+                line-height: 1.5;
+                color: #01996D;
+                font-size: 30px;
+            }
+
+            p {
+                margin: 20px 0;
+                font-family: Lato;
+                font-style: normal;
+                line-height: 1.5;
+            }
+
+            button {
+                padding: 15px 30px;
+            }
+        }
+
+        .product-img {
+            flex: 1;
+
+            img {
+                width: 85%;
+                border-radius: 10px;
+            }
+        }
+
+    }
+
+    @media (max-width:800px) {
+
+        .container {
+            flex-direction: column;
+            text-align: center;
+            padding: 0 20px;
+
+            .product-text {
+                margin-top: 20px;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+}
