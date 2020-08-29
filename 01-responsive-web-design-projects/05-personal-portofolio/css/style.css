@@ -146,38 +146,38 @@ header #hero span {
   }
 }
 
-#about {
-  min-height: 80vh;
+#welcome-section {
+  height: 100vh;
   padding: 80px;
   color: #f4f5f7;
 }
 
-#about h2 {
+#welcome-section h1 {
   margin-bottom: 40px;
 }
 
-#about h3 {
+#welcome-section h3 {
   margin: 20px 0px;
 }
 
-#about p {
+#welcome-section p {
   margin: 10px 0px;
   line-height: 1.5;
 }
 
-#about .skills {
+#welcome-section .skills {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-#about .skills li {
+#welcome-section .skills li {
   margin: 10px 0px;
 }
 
 @media (max-width: 800px) {
-  #about {
+  #welcome-section {
     padding: 30px;
   }
 }
@@ -223,7 +223,7 @@ header #hero span {
   text-align: right;
 }
 
-#projects .card-detail h3 {
+#projects .card-detail h3.project-tile {
   margin: 15px 0px;
 }
 
