@@ -1,0 +1,60 @@
+header {
+
+    color: rgb(244, 245, 247);
+
+    h2 {
+        line-height: 1.5;
+    }
+
+    #navbar {
+        font-weight: bold;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 0;
+        right: 0;
+        border-radius: 0px 0px 10px 10px;
+        background-color: #152541;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+
+
+        .nav-links {
+            padding: 20px;
+            @include flex(row, space-between);
+
+            a:hover {
+                color: orange;
+            }
+        }
+    }
+
+    #hero {
+        margin-top: 100px;
+
+        min-height: 90vh;
+        padding: 50px 80px;
+
+        h1,
+        h2 {
+            font-weight: 400;
+            margin: 20px 0px;
+        }
+
+        h2 {
+            margin: 70px 0px 50px;
+        }
+
+
+        span {
+            font-weight: bold;
+        }
+
+        @media (max-width:800px) {
+            padding: 30px;
+        }
+
+    }
+
+
+
+}

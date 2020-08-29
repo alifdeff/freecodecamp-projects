@@ -1,0 +1,46 @@
+footer {
+    padding: 30px;
+    color: rgb(244, 245, 247);
+
+    .footer-atas {
+        width: 200px;
+
+        ul {
+            @include flex(row, space-between);
+
+            li {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .footer-bawah {
+        @include flex(row, space-between);
+        margin: 20px 0px 10px;
+
+        ul {
+            @include flex(row, space-between);
+
+            li {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    @media (max-width:800px) {
+        text-align: center;
+
+        .footer-atas {
+            margin: auto;
+        }
+
+        .footer-bawah {
+            flex-direction: column;
+
+            p {
+                margin: 10px 0px;
+            }
+        }
+    }
+
+}

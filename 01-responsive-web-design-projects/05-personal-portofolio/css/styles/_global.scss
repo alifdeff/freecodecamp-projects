@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+$color-background: #112340;
+$color-link:rgb(244, 245, 247);
+
+body {
+    background-color: $color-background;
+    font-family: 'Inter';
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: $color-link;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+.container {
+    max-width: 100%;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container-small {
+    width: 600px;
+}
+
+@mixin flex($direction, $justify) {
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+section {
+    min-height: 100vh;
+    padding: 80px 0px;
+}
+
+.btn {
+    padding: 17px 30px;
+    background-color: rgb(253, 156, 173);
+    position: relative;
+    border-radius: 5px;
+    border: none;
+
+    p {
+        position: relative;
+        z-index: 1;
+        color: rgb(9, 22, 42);
+        font-size: 15px;
+        font-family: 'Inter';
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80%;
+        border-radius: 5px;
+        background-color: rgb(247, 169, 182);
+    }
+
+    &:hover::after {
+        background-color: rgb(212, 129, 145);
+    }
+
+}
+
+// Icon
+i {
+    font-size: 30px;
+}

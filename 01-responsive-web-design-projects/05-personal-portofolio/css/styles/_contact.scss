@@ -1,0 +1,47 @@
+#contact {
+    padding: 80px;
+
+    color: rgb(244, 245, 247);
+
+    div {
+        margin: 10px 0px 40px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin: 10px 0px;
+    }
+
+    form {
+        width: 40%;
+        margin-bottom: 20px;
+
+
+        input,
+        textarea {
+            margin: 10px 0px;
+            width: 100%;
+            border-radius: 3px;
+            border: none;
+            padding: 10px;
+            outline: none;
+        }
+
+    }
+
+    .btn {
+        padding: 4px 15px;
+    }
+
+    @media (max-width:800px) {
+        padding: 30px;
+
+        form {
+            width: 100%;
+        }
+    }
+
+}
